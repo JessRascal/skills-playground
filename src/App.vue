@@ -28,29 +28,27 @@
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>fas fa-external-link-alt</v-icon>
+        <span class="mr-2">GitHub Repo</span>
+        <v-icon>{{ icons.openInNew }}</v-icon>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld />
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import { mdiOpenInNew } from '@mdi/js';
 
 export default {
-  name: "App",
-
-  components: {
-    HelloWorld
-  },
+  name: 'App',
 
   data: () => ({
-    //
-  })
+    icons: {
+      openInNew: mdiOpenInNew,
+    },
+  }),
 };
 </script>
