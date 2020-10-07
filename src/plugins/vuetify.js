@@ -8,7 +8,17 @@ export default new Vuetify({
     options: {
       customProperties: true,
     },
+    dark: true,
     themes: {
+      dark: {
+        primary: '#3f51b5',
+        secondary: '#ff9800',
+        accent: '#ff5722',
+        error: '#f44336',
+        warning: '#ffc107',
+        info: '#2196f3',
+        success: '#4caf50',
+      },
       light: {
         primary: '#ee44aa',
         secondary: '#424242',
