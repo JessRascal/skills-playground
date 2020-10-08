@@ -19,3 +19,8 @@ export default {
   },
 };
 </script>
+
+<style>
+/* loads local font */
+@import '../node_modules/typeface-roboto/index.css';
+</style>
