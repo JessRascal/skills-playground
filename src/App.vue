@@ -2,13 +2,15 @@
   <v-app>
     <TheNavigation />
     <v-main>
-      <router-view />
+      <v-fade-transition mode="out-in">
+        <router-view />
+      </v-fade-transition>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import TheNavigation from '@/components/base/TheNavigation';
+import TheNavigation from '@/components/core/TheNavigation';
 
 export default {
   name: 'App',

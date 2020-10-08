@@ -1,5 +1,10 @@
 <template>
-  <v-navigation-drawer app permanent clipped>
+  <v-navigation-drawer
+    :value="showSideNav"
+    @input="toggleSideNav($event)"
+    app
+    clipped
+  >
     <v-list-item>
       <v-list-item-content>
         <v-list-item-title class="title">
@@ -28,18 +33,26 @@
 </template>
 
 <script>
-import { mdiViewDashboard, mdiImage, mdiHelpBox } from '@mdi/js';
+import { mapState, mapMutations } from 'vuex';
+import { mdiHome, mdiVuejs, mdiVuetify } from '@mdi/js';
 
 export default {
   data() {
     return {
       items: [
-        { title: 'Dashboard', icon: mdiViewDashboard },
-        { title: 'Photos', icon: mdiImage },
-        { title: 'About', icon: mdiHelpBox },
+        { title: 'Home', icon: mdiHome },
+        { title: 'Vue.js', icon: mdiVuejs },
+        { title: 'Vue Router', icon: mdiVuejs },
+        { title: 'Vuex', icon: mdiVuejs },
+        { title: 'Vuetify', icon: mdiVuetify },
       ],
-      right: null,
     };
+  },
+  computed: {
+    ...mapState(['showSideNav']),
+  },
+  methods: {
+    ...mapMutations(['toggleSideNav']),
   },
 };
 </script>
