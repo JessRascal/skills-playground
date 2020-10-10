@@ -7,6 +7,7 @@
     />
     <!-- TODO: create a slideshow that automatically changes to a more casual picture? -->
     <!-- or just replace for a more casual picture? -->
+    <!-- put a primary-coloured effect over the top like RTS website -->
   </v-avatar>
 </template>
 

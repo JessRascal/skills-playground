@@ -11,13 +11,39 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: '/contact',
+    name: 'Contact',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/About.vue'),
+      import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
+  },
+  // skill views
+  {
+    path: '/skill/vuejs',
+    name: 'VueJsSkill',
+    component: () =>
+      import(/* webpackChunkName: "vuejs-view" */ '../views/skills/VueJs.vue'),
+  },
+  {
+    path: '/skill/vue-router',
+    name: 'VueRouterSkill',
+    component: () =>
+      import(
+        /* webpackChunkName: "vue-router-view" */ '../views/skills/VueRouter.vue'
+      ),
+  },
+  {
+    path: '/skill/vuetify',
+    name: 'VuetifySkill',
+    component: () =>
+      import(
+        /* webpackChunkName: "vuetify-view" */ '../views/skills/Vuetify.vue'
+      ),
+  },
+  {
+    path: '/skill/vuex',
+    name: 'VuexSkill',
+    component: () =>
+      import(/* webpackChunkName: "vuex-view" */ '../views/skills/Vuex.vue'),
   },
 ];
 
