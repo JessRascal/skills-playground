@@ -16,34 +16,45 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "contact" */ '../views/Contact.vue'),
   },
-  // skill views
   {
-    path: '/skill/vuejs',
-    name: 'VueJsSkill',
+    path: '/skills',
     component: () =>
-      import(/* webpackChunkName: "vuejs-view" */ '../views/skills/VueJs.vue'),
-  },
-  {
-    path: '/skill/vue-router',
-    name: 'VueRouterSkill',
-    component: () =>
-      import(
-        /* webpackChunkName: "vue-router-view" */ '../views/skills/VueRouter.vue'
-      ),
-  },
-  {
-    path: '/skill/vuetify',
-    name: 'VuetifySkill',
-    component: () =>
-      import(
-        /* webpackChunkName: "vuetify-view" */ '../views/skills/Vuetify.vue'
-      ),
-  },
-  {
-    path: '/skill/vuex',
-    name: 'VuexSkill',
-    component: () =>
-      import(/* webpackChunkName: "vuex-view" */ '../views/skills/Vuex.vue'),
+      import(/* webpackChunkName: "skills" */ '../views/skills/Skills.vue'),
+    children: [
+      // skill views
+      {
+        path: 'vuejs',
+        name: 'VueJsSkill',
+        component: () =>
+          import(
+            /* webpackChunkName: "vuejs-view" */ '../views/skills/VueJs.vue'
+          ),
+      },
+      {
+        path: 'vue-router',
+        name: 'VueRouterSkill',
+        component: () =>
+          import(
+            /* webpackChunkName: "vue-router-view" */ '../views/skills/VueRouter.vue'
+          ),
+      },
+      {
+        path: 'vuetify',
+        name: 'VuetifySkill',
+        component: () =>
+          import(
+            /* webpackChunkName: "vuetify-view" */ '../views/skills/Vuetify.vue'
+          ),
+      },
+      {
+        path: 'vuex',
+        name: 'VuexSkill',
+        component: () =>
+          import(
+            /* webpackChunkName: "vuex-view" */ '../views/skills/Vuex.vue'
+          ),
+      },
+    ],
   },
 ];
 
