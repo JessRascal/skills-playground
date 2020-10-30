@@ -3,16 +3,19 @@
     <TheSubtleHeader heading="Contact Me" />
     <v-row justify="center">
       <v-col sm="8">
-        <p>
-          Feel free to contact me about any potential frontend development work
-          you need or if you've just got some questions.
-        </p>
-        <p>
-          Always a pleasure, never a chore.
-        </p>
-        <p>
-          Jess
-        </p>
+        <div class="text-body-1 text-md-h5">
+          <p>
+            Feel free to contact me about any potential frontend development
+            work you need or if you've just got some questions.
+          </p>
+          <p>
+            Jess
+            <em class="text-overline text--disabled">
+              <br />
+              Always a pleasure, never a chore.
+            </em>
+          </p>
+        </div>
       </v-col>
     </v-row>
     <v-row justify="space-around">
