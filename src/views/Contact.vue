@@ -1,12 +1,12 @@
 <template>
-  <v-container fill-height>
+  <v-container>
     <TheSubtleHeader heading="Contact Me" />
     <v-row justify="center">
-      <v-col sm="8">
-        <div class="text-body-1 text-md-h5">
+      <v-col sm="10" lg="9" xl="8">
+        <div class="text-h5">
           <p>
-            Feel free to contact me about any potential frontend development
-            work you need or if you've just got some questions.
+            Feel free to reach out to me about any potential frontend
+            development work or if you've just got a question.
           </p>
           <p>
             Jess
@@ -18,8 +18,14 @@
         </div>
       </v-col>
     </v-row>
-    <v-row justify="space-around">
-      <v-col v-for="contact in contacts" :key="contact.url" sm="6" md="3">
+    <v-row justify="center">
+      <v-col
+        v-for="contact in contacts"
+        :key="contact.url"
+        sm="6"
+        md="4"
+        lg="3"
+      >
         <ContactCard v-bind="contact" />
       </v-col>
     </v-row>
@@ -37,3 +43,14 @@ export default {
   mixins: [ContactMixin],
 };
 </script>
+
+<style lang="scss" scoped>
+.row {
+  &:first-of-type {
+    margin-top: 10vh;
+  }
+  &:not(:first-of-type) {
+    margin-top: 5vh;
+  }
+}
+</style>

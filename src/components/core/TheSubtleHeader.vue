@@ -1,5 +1,7 @@
 <template functional>
-  <h1 id="backgroundHeading">{{ props.heading }}</h1>
+  <h1 class="d-none d-sm-flex text-right" id="backgroundHeading">
+    {{ props.heading }}
+  </h1>
 </template>
 
 <script>
