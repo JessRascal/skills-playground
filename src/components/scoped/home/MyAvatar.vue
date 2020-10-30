@@ -26,8 +26,10 @@ export default {
 };
 </script>
 
+//
 <style lang="scss" scoped>
-#avatar-image {
-  border: 10px solid $primary;
-}
+// #avatar-image {
+//   border: 10px solid $primary;
+// }
+//
 </style>
