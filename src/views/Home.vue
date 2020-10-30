@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <TheSubtleHeader heading="hello" />
     <v-row>
       <v-col class="d-flex justify-center">
         <MyAvatar />

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <TheSubtleHeader heading="Contact Me" />
+    <TheSubtleHeader heading="contact me" />
     <v-row justify="center">
       <v-col sm="10" lg="9" xl="8">
         <div class="text-h5">

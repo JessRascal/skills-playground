@@ -19,7 +19,6 @@ export default {
 #backgroundHeading {
   opacity: 5%;
   font-size: 9rem;
-  text-transform: uppercase;
   position: fixed;
   top: 40px;
   right: 0;
