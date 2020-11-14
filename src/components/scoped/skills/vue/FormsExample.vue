@@ -4,8 +4,8 @@
       <p>Forms appear in most apps, and yet nobody likes filling them out.</p>
       <p>
         Even though they are a "necessary evil"
-        <span class="text--disabled">(dramatic)</span>, you owe it to your users
-        to make them as easy as possible to complete.
+        <HighlightText type="low">(dramatic)</HighlightText>, you owe it to your
+        users to make them as easy as possible to complete.
       </p>
       <p>
         You also need to make sure that if they make a mistake, it is clear how

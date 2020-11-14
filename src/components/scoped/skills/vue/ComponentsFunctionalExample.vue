@@ -13,7 +13,7 @@
         The external links in this app are all styled the same using a
         functional component that I've called
         <HighlightText>ExternalLink</HighlightText>
-        <span class="text--disabled"> (imaginative)</span>.
+        <HighlightText type="low">&nbsp;(imaginative)</HighlightText>.
       </p>
     </slot>
   </SkillExample>
