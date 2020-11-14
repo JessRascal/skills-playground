@@ -11,9 +11,8 @@
         <div class="text-h4 text-center">
           <p>
             I am a freelance
-            <span class="secondary--text">frontend developer</span> that
-            specialises in
-            <a href="https://vuejs.org/" target="_blank">Vue.js</a>.
+            <HighlightText>frontend developer</HighlightText> that specialises
+            in <a href="https://vuejs.org/" target="_blank">Vue.js</a>.
           </p>
         </div>
       </v-col>
@@ -22,8 +21,8 @@
       <v-col sm="10" lg="9" xl="8">
         <div class="text-h5 text-center">
           <p>
-            This app gives you a preview of how I can help you improve the user
-            experience of your own app for your users.
+            This app gives you a preview of what I can do in Vue and how this
+            can <HighlightText>help you and your users</HighlightText>.
           </p>
         </div>
       </v-col>

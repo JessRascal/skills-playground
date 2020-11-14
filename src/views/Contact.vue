@@ -5,8 +5,10 @@
       <v-col sm="10" lg="9" xl="8">
         <div class="text-h5">
           <p>
-            Feel free to reach out to me about any potential frontend
-            development work or if you've just got a question.
+            Feel free to <HighlightText>reach out to me</HighlightText> about
+            any potential
+            <HighlightText>frontend development work</HighlightText>
+            or if you've have any <HighlightText>questions</HighlightText>.
           </p>
           <p>
             Jess

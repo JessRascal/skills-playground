@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 /* loads local font */
 @import '../node_modules/typeface-roboto/index.css';
 </style>

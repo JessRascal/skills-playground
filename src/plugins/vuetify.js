@@ -1,7 +1,13 @@
 import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
+import Vuetify, { VRow, VCol } from 'vuetify/lib';
 
-Vue.use(Vuetify);
+Vue.use(Vuetify, {
+  // components manually imported for functional components
+  components: {
+    VRow,
+    VCol,
+  },
+});
 
 export default new Vuetify({
   theme: {
@@ -18,7 +24,7 @@ export default new Vuetify({
         warning: '#ffc107',
         info: '#2196f3',
         success: '#4caf50',
-        anchor: '#42b983',
+        anchor: '#ff9800',
       },
       light: {
         primary: '#3282b8',

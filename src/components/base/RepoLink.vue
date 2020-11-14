@@ -5,7 +5,7 @@
     text
     :icon="screenIsXs"
   >
-    <span v-if="!screenIsXs" class="mr-2">This Site's Repo</span>
+    <span v-if="!screenIsXs" class="mr-2">This App's Repo</span>
     <v-icon>{{ icons.github }}</v-icon>
   </v-btn>
 </template>

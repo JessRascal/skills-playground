@@ -6,7 +6,7 @@
       :href="url"
       class="pa-10 text-center"
       target="_blank"
-      :color="hover ? colour : null"
+      :color="hover ? color : null"
     >
       <v-card-text>
         <v-icon
@@ -41,7 +41,7 @@ export default {
       type: String,
       default: mdiAccountCircle,
     },
-    colour: {
+    color: {
       type: String,
       required: true,
     },
