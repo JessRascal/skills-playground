@@ -24,7 +24,7 @@ export default new Vuetify({
         warning: '#ffc107',
         info: '#2196f3',
         success: '#4caf50',
-        anchor: '#ff9800',
+        anchor: '#42b983',
       },
       light: {
         primary: '#3282b8',

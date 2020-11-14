@@ -8,10 +8,12 @@
       </p>
       <p>
         Feel free to look at how I've
-        <HighlightText>structured this app</HighlightText> to see if I stand by
-        my word.
+        <ExternalLink
+          url="https://github.com/JessRascal/skills-playground/tree/main/src"
+          >structured this app</ExternalLink
+        >
+        to see if I stand by my word.
       </p>
-      <!-- TODO: link to the 'src' folder in my repo (put url in state?) -->
     </slot>
   </SkillExample>
 </template>

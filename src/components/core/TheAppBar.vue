@@ -4,10 +4,9 @@
     <v-app-bar-nav-icon
       v-if="$vuetify.breakpoint.mobile"
       @click="toggleSideNav(true)"
-    ></v-app-bar-nav-icon>
-
+    />
     <AppLogo />
-    <v-spacer></v-spacer>
+    <v-spacer />
     <RepoLink />
   </v-app-bar>
 </template>

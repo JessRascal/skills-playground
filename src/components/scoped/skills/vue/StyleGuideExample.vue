@@ -2,15 +2,18 @@
   <SkillExample title="Official Style Guide">
     <slot>
       <p>
-        Different developers write code in different ways, and this is fine.
+        Different developers write code in different ways, and that is fine.
       </p>
       <p>
         However, there are certain things in your codebase that you want to be
         consistent so, it doesn't become unmanageable.
       </p>
       <p>
-        I use the <HighlightText>Official Vue Style Guide</HighlightText> to
-        keep things tidy and consistent.
+        I use the
+        <ExternalLink url="https://vuejs.org/v2/style-guide/"
+          >Official Vue Style Guide</ExternalLink
+        >
+        to keep things tidy and consistent.
       </p>
     </slot>
   </SkillExample>

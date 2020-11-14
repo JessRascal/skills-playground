@@ -1,7 +1,12 @@
 <template>
   <SkillExample title="Forms">
     <slot>
-      <p>Forms appear in most apps, and yet nobody likes filling them out.</p>
+      <p>
+        <ExternalLink url="https://vuejs.org/v2/guide/forms.html"
+          >Forms</ExternalLink
+        >
+        appear in most apps, and yet nobody likes filling them out.
+      </p>
       <p>
         Even though they are a "necessary evil"
         <HighlightText type="low">(dramatic)</HighlightText>, you owe it to your
@@ -9,11 +14,11 @@
       </p>
       <p>
         You also need to make sure that if they make a mistake, it is clear how
-        they can correct them (validation).
+        they can correct it (validation).
       </p>
       <p>
-        My preference is a model-driven approach to validation using
-        <HighlightText>Vuelidate</HighlightText>.
+        My preference for validation is a model-driven approach using
+        <ExternalLink url="https://vuelidate.js.org/">Vuelidate</ExternalLink>.
       </p>
     </slot>
   </SkillExample>

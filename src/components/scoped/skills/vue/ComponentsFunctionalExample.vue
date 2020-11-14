@@ -6,14 +6,20 @@
         reactivity magic.
       </p>
       <p>
-        I use <HighlightText>Functional components</HighlightText> when this is
-        the case, and it results in them rendering quicker.
+        I use
+        <ExternalLink
+          url="https://vuejs.org/v2/guide/render-function.html#Functional-Components"
+          >Functional Components</ExternalLink
+        >
+        when this is the case, and it results in them rendering quicker.
       </p>
       <p>
         The external links in this app are all styled the same using a
         functional component that I've called
-        <HighlightText>ExternalLink</HighlightText>
-        <HighlightText type="low">&nbsp;(imaginative)</HighlightText>.
+        <ExternalLink
+          url="https://github.com/JessRascal/skills-playground/blob/main/src/components/base/LinkExternal.vue"
+          >ExternalLink</ExternalLink
+        ><HighlightText type="low"> (predictably)</HighlightText>.
       </p>
     </slot>
   </SkillExample>

@@ -22,11 +22,6 @@ export default {
           icon: mdiGithub,
           color: '#000000',
         },
-        // blog: {
-        //   handle: 'My Blog',
-        //   url: 'https://jessrascal.com',
-        //   icon: mdiPost,
-        // },
       },
     };
   },

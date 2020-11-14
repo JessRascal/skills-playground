@@ -2,8 +2,8 @@
   <SkillExample title="Transitions and Animations">
     <slot>
       <p>
-        Who doesn't like a good <HighlightText>animation</HighlightText> or
-        <HighlightText>transition</HighlightText>?
+        Who doesn't like a good <HighlightText>transition</HighlightText> or
+        <HighlightText>animation</HighlightText>?
       </p>
       <p>
         Your users might not realise they notice them, but they will feel your
@@ -12,8 +12,10 @@
         <HighlightText>impressive</HighlightText>, etc.
       </p>
       <p>
-        Transitions, in particular, can also help make your app feel faster and
-        assist your users in navigating it.
+        <ExternalLink url="https://vuejs.org/v2/guide/transitions.html"
+          >Transitions</ExternalLink
+        >, in particular, can also help make your app feel faster and assist
+        your users in navigating it.
       </p>
     </slot>
   </SkillExample>

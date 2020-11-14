@@ -1,9 +1,7 @@
 <template functional>
-  <div>
-    <a :href="props.url">
-      <slot />
-    </a>
-  </div>
+  <a :href="props.url" target="_blank">
+    <slot />
+  </a>
 </template>
 
 <script>
@@ -18,12 +16,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* anchor links */
 a {
+  color: $secondary;
   text-decoration: none;
-  border-bottom: 1px solid $primary;
-  // &:hover:not(.v-list-item):not(.v-btn) {
-  //   text-decoration: underline;
-  // }
+  border-bottom: 1px solid var(--v-secondary-darken4);
+  &:hover {
+    border-bottom: 1px solid var(--v-secondary-lighten1);
+    color: var(--v-secondary-lighten1);
+  }
 }
 </style>

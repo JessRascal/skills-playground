@@ -10,18 +10,14 @@
       <v-list-item-group color="secondary">
         <v-list-item :to="{ name: 'Contact' }" exact>
           <v-list-item-content>
-            <v-list-item-title class="title">
-              Jess Rascal
-            </v-list-item-title>
-            <v-list-item-subtitle>
-              hi@jessrascal.com
-            </v-list-item-subtitle>
+            <v-list-item-title class="title">Jess Rascal</v-list-item-title>
+            <v-list-item-subtitle>hi@jessrascal.com</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list-item-group>
     </v-list>
 
-    <v-divider></v-divider>
+    <v-divider />
 
     <v-list dense nav flat>
       <!-- general links -->
