@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Functional Components">
+  <SkillScreenExample title="Functional Components">
     <slot>
       <p>
         Sometimes components are so simple that they don't need all of Vue's
@@ -22,13 +22,13 @@
         ><HighlightText type="low"> (predictably)</HighlightText>.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

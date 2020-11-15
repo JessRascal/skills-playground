@@ -1,9 +1,10 @@
 import Vue from 'vue';
-import Vuetify, { VRow, VCol } from 'vuetify/lib';
+import Vuetify, { VContainer, VRow, VCol } from 'vuetify/lib';
 
 Vue.use(Vuetify, {
   // components manually imported for functional components
   components: {
+    VContainer,
     VRow,
     VCol,
   },

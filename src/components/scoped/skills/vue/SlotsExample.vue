@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Slots">
+  <SkillScreenExample title="Slots">
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
@@ -9,13 +9,13 @@
     <template v-slot:example>
       Slots, named slots, and scoped slots (?)
     </template>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

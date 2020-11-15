@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Reactivity">
+  <SkillScreenExample title="Reactivity">
     <slot>
       <!-- TODO: example of button making something appear? Look at other basic reactivity example options -->
       <p>
@@ -19,13 +19,13 @@
       </p>
       <p>I believe this is how we all want apps to work.</p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

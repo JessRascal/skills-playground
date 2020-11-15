@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Transitions and Animations">
+  <SkillScreenExample title="Transitions and Animations">
     <slot>
       <p>
         Who doesn't like a good <HighlightText>transition</HighlightText> or
@@ -18,13 +18,13 @@
         your users in navigating it.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

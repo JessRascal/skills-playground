@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Reusable Components">
+  <SkillScreenExample title="Reusable Components">
     <slot>
       <!-- TODO: example of square with 'x' in it and then multiple copies of it with all having a number instead of the 'x' -->
       <p>
@@ -26,19 +26,19 @@
       <p>
         Each of the examples in this list is based on a single
         <ExternalLink
-          url="https://github.com/JessRascal/skills-playground/blob/main/src/components/scoped/skills/SkillExample.vue"
-          >SkillExample.vue</ExternalLink
+          url="https://github.com/JessRascal/skills-playground/blob/main/src/components/scoped/skills/SkillScreenExample.vue"
+          >SkillScreenExample.vue</ExternalLink
         >
         component.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Forms">
+  <SkillScreenExample title="Forms">
     <slot>
       <p>
         <ExternalLink url="https://vuejs.org/v2/guide/forms.html"
@@ -21,13 +21,13 @@
         <ExternalLink url="https://vuelidate.js.org/">Vuelidate</ExternalLink>.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

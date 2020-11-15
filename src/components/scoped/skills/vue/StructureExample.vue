@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Structured Code">
+  <SkillScreenExample title="Structured Code">
     <slot>
       <p>There are no downsides to having well-structured code.</p>
       <p>
@@ -15,13 +15,13 @@
         to see if I stand by my word.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

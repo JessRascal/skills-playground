@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Official Style Guide">
+  <SkillScreenExample title="Official Style Guide">
     <slot>
       <p>
         Different developers write code in different ways, and that is fine.
@@ -16,13 +16,13 @@
         to keep things tidy and consistent.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

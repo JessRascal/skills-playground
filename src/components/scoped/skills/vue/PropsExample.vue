@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Props">
+  <SkillScreenExample title="Props">
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
@@ -7,13 +7,13 @@
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
     <!-- TODO: REMOVE BECAUSE NOT USED? -->
     <template v-slot:example>This is the example</template>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

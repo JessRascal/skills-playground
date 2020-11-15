@@ -1,19 +1,21 @@
 <template>
-  <v-container fluid>
-    <TheSubtleHeader heading="vuetify" />
-    <SkillScreenHeader>
-      <template v-slot:header>Header for Vuetify.</template>
-      <template v-slot:sub-header>Sub-header for Vuetify.</template>
-    </SkillScreenHeader>
-  </v-container>
+  <SkillScreen heading="vuetify">
+    <template v-slot:intro>Intro for Vuetify.</template>
+    <template v-slot:description>Description for Vuetify.</template>
+    <template v-slot:examples>
+      <v-row justify="center">
+        <v-col sm="10" lg="9" xl="8"> [put something here] </v-col>
+      </v-row>
+    </template>
+  </SkillScreen>
 </template>
 
 <script>
-import SkillScreenHeader from '@/components/scoped/skills/SkillScreenHeader';
+import SkillScreen from '@/components/scoped/skills/SkillScreen';
 
 export default {
   components: {
-    SkillScreenHeader,
+    SkillScreen,
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Mixins">
+  <SkillScreenExample title="Mixins">
     <slot>
       <p>
         I mentioned about reusing full components, but sometimes it's only a
@@ -26,13 +26,13 @@
         across components.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

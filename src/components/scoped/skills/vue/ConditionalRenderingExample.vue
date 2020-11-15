@@ -1,5 +1,5 @@
 <template>
-  <SkillExample title="Conditional Rendering">
+  <SkillScreenExample title="Conditional Rendering">
     <slot>
       <p>It's easy to overload your user with too much information.</p>
       <p>
@@ -13,13 +13,13 @@
         therefore makes your app easier to use.
       </p>
     </slot>
-  </SkillExample>
+  </SkillScreenExample>
 </template>
 
 <script>
-import SkillExample from '@/components/scoped/skills/SkillExample';
+import SkillScreenExample from '@/components/scoped/skills/SkillScreenExample';
 
 export default {
-  components: { SkillExample },
+  components: { SkillScreenExample },
 };
 </script>

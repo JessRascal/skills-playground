@@ -1,29 +1,28 @@
 <template>
-  <v-container fluid>
-    <TheSubtleHeader heading="vue.js" />
-    <SkillScreenHeader>
-      <template v-slot:header>
-        This full app is built with <HighlightText>Vue</HighlightText> and some
-        of its <HighlightText> supporting libraries.</HighlightText>
-      </template>
-      <template v-slot:sub-header>
-        Let me tell you about some of the aspects of Vue I like to use and why.
-      </template>
-    </SkillScreenHeader>
-    <ComponentsReusableExample />
-    <ReactivityExample />
-    <ConditionalRenderingExample />
-    <FormsExample />
-    <ComponentsFunctionalExample />
-    <MixinsExample />
-    <TransitionsExample />
-    <StructureExample />
-    <StyleGuideExample />
-  </v-container>
+  <SkillScreen heading="vue.js">
+    <template v-slot:intro>
+      This full app is built with <HighlightText>Vue</HighlightText> and some of
+      its <HighlightText> supporting libraries.</HighlightText>
+    </template>
+    <template v-slot:description>
+      Let me tell you about some of the aspects of Vue I like to use and why.
+    </template>
+    <template v-slot:examples>
+      <ComponentsReusableExample />
+      <ReactivityExample />
+      <ConditionalRenderingExample />
+      <FormsExample />
+      <ComponentsFunctionalExample />
+      <MixinsExample />
+      <TransitionsExample />
+      <StructureExample />
+      <StyleGuideExample />
+    </template>
+  </SkillScreen>
 </template>
 
 <script>
-import SkillScreenHeader from '@/components/scoped/skills/SkillScreenHeader';
+import SkillScreen from '@/components/scoped/skills/SkillScreen';
 import ComponentsFunctionalExample from '@/components/scoped/skills/vue/ComponentsFunctionalExample';
 import ComponentsReusableExample from '@/components/scoped/skills/vue/ComponentsReusableExample';
 import ConditionalRenderingExample from '@/components/scoped/skills/vue/ConditionalRenderingExample';
@@ -36,7 +35,7 @@ import TransitionsExample from '@/components/scoped/skills/vue/TransitionsExampl
 
 export default {
   components: {
-    SkillScreenHeader,
+    SkillScreen,
     ComponentsFunctionalExample,
     ComponentsReusableExample,
     ConditionalRenderingExample,
