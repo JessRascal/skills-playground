@@ -36,6 +36,7 @@ const routes = [
       {
         path: 'vue-router',
         name: 'VueRouterSkill',
+        redirect: { name: 'NestedRouteExample' },
         component: () =>
           import(
             /* webpackChunkName: "vue-router-view" */ '../views/skills/VueRouter.vue'
