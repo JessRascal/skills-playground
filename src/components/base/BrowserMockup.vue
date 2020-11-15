@@ -11,11 +11,16 @@
       <v-icon class="action-icon">{{ icons.refresh }}</v-icon>
       <!-- TODO: bug with min-height on .v-input__slot stops -->
       <!-- 'height' on field being honoured if less than that (40px dense, 56px normal) -->
-      <v-text-field outlined rounded dense disabled hide-details></v-text-field>
+      <v-text-field
+        outlined
+        rounded
+        dense
+        disabled
+        hide-details
+        :value="url"
+      ></v-text-field>
     </v-card-title>
-    <v-card-text>
-      This is a browser, it just doesn't look like one yet.
-    </v-card-text>
+    <slot />
   </v-card>
 </template>
 
@@ -32,6 +37,10 @@ export default {
     minHeight: {
       type: String,
       default: '50vh',
+    },
+    url: {
+      type: String,
+      default: window.location.toString(),
     },
   },
   data() {
@@ -51,13 +60,6 @@ export default {
 #address-bar {
   background: #363636; // TODO: possible to get from theme variable?
   padding: 8px;
-
-  // .v-text-field {
-  //   //  without 'outlined'
-  //   margin-top: 0;
-  //   padding-top: 0;
-  //   border: 1px solid #1e1e1e !important;
-  // }
 }
 
 .action-icon {

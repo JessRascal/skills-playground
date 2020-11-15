@@ -1,10 +1,19 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <TheSubtleHeader heading="vuex" />
-    <v-row>
-      <v-col>
-        <p>Vuex skill page</p>
-      </v-col>
-    </v-row>
+    <SkillScreenHeader>
+      <template v-slot:header>Header for Vuex.</template>
+      <template v-slot:sub-header>Sub-header for Vuex.</template>
+    </SkillScreenHeader>
   </v-container>
 </template>
+
+<script>
+import SkillScreenHeader from '@/components/scoped/skills/SkillScreenHeader';
+
+export default {
+  components: {
+    SkillScreenHeader,
+  },
+};
+</script>
