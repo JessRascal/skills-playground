@@ -24,7 +24,7 @@
         dense
         disabled
         hide-details
-        :value="url"
+        :value="currentUrl"
       ></v-text-field>
     </v-card-title>
     <slot />
@@ -47,7 +47,6 @@ export default {
     },
     url: {
       type: String,
-      default: window.location.toString(),
     },
   },
   data() {
@@ -59,6 +58,11 @@ export default {
         refresh: mdiRefresh,
       },
     };
+  },
+  computed: {
+    currentUrl() {
+      return this.url ?? window.location.origin + this.$route.fullPath;
+    },
   },
 };
 </script>

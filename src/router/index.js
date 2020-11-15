@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+// vue router example components
+import NestedRoutesExample from '@/components/scoped/skills/vue-router/NestedRoutesExample';
+import PropsExample from '@/components/scoped/skills/vue-router/PropsExample';
 
 Vue.use(VueRouter);
 
@@ -37,6 +40,19 @@ const routes = [
           import(
             /* webpackChunkName: "vue-router-view" */ '../views/skills/VueRouter.vue'
           ),
+        children: [
+          // router examples
+          {
+            path: 'example/nested-routes',
+            name: 'NestedRouteExample',
+            component: NestedRoutesExample,
+          },
+          {
+            path: 'example/props',
+            name: 'PropsExample',
+            component: PropsExample,
+          },
+        ],
       },
       {
         path: 'vuetify',
