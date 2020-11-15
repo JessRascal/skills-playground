@@ -6,9 +6,16 @@
       <v-icon small color="success">{{ icons.circle }}</v-icon>
     </v-system-bar>
     <v-card-title id="address-bar">
-      <v-icon class="action-icon">{{ icons.arrowLeft }}</v-icon>
-      <v-icon class="action-icon">{{ icons.arrowRight }}</v-icon>
-      <v-icon class="action-icon">{{ icons.refresh }}</v-icon>
+      <v-btn icon disabled>
+        <v-icon>{{ icons.arrowLeft }}</v-icon>
+      </v-btn>
+      <v-btn icon disabled>
+        <v-icon>{{ icons.arrowRight }}</v-icon>
+      </v-btn>
+      <v-btn icon disabled class="mr-3">
+        <v-icon>{{ icons.refresh }}</v-icon>
+      </v-btn>
+
       <!-- TODO: bug with min-height on .v-input__slot stops -->
       <!-- 'height' on field being honoured if less than that (40px dense, 56px normal) -->
       <v-text-field
@@ -60,9 +67,5 @@ export default {
 #address-bar {
   background: #363636; // TODO: possible to get from theme variable?
   padding: 8px;
-}
-
-.action-icon {
-  margin-right: 16px;
 }
 </style>
